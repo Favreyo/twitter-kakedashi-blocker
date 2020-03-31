@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "WTFPLv2",
+  "license": "WTFPL",
   "dependencies": {
     "@types/twitter": "^1.7.0",
     "twitter": "^1.7.1"
