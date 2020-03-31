@@ -4,7 +4,6 @@ const fs = require("fs").promises;
 const client = new Twitter(config.auth);
 
 
-
 const getFriends = () => new Promise(resolve => {
   const params = { screen_name: config.screen_name, cursor: -1, stringify_ids: true };
   client.get("friends/ids", params, ((error, data, response) => {

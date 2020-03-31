@@ -6,7 +6,7 @@ const client = new Twitter(config.auth);
 async function main() {
   const follows = JSON.parse(await fs.readFile("follows.json"));
 
-  client.get("search/tweets", {q: "#駆け出しエンジニアと繋がりたい", count: 1}, ((error, data, response) => {
+  client.get("search/tweets", {q: "#駆け出しエンジニアと繋がりたい", count: 100}, ((error, data, response) => {
     if (error) return console.log(error);
     for (const tweet of data.statuses) {
       if (follows.ids.includes(tweet.user["id_str"])) return;
