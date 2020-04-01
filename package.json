@@ -12,5 +12,8 @@
   "dependencies": {
     "@types/twitter": "^1.7.0",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2"
   }
 }
